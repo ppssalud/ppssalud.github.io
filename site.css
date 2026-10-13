@@ -3,13 +3,12 @@
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
 .site-nav{position:sticky;top:0;z-index:50;background:#fffd;backdrop-filter:blur(22px);border-bottom:1px solid #08375312}
-.site-nav-inner{max-width:1180px;height:72px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
-.site-brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;color:var(--navy);font-size:1.12rem}
-.site-brand img{width:42px;height:42px;border-radius:12px}
-.site-links{display:flex;align-items:center;gap:22px;font-size:.94rem;font-weight:700}
+.site-nav-inner{max-width:1180px;min-height:48px;margin:auto;padding:6px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.site-brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:800;color:var(--navy);font-size:1rem}
+.site-brand img{width:34px;height:34px;border-radius:10px}
+.site-links{display:flex;align-items:center;justify-content:center;gap:6px 18px;min-height:36px;padding:5px 24px 7px;border-top:1px solid #0837530b;font-size:.84rem;font-weight:700;flex-wrap:wrap}
 .site-links a,.site-menu a{text-decoration:none;color:#24425f}
 .site-links a:hover,.site-menu a:hover{color:var(--teal)}
-.site-cta{padding:10px 16px;border-radius:99px;background:var(--ink);color:#fff!important}
 .site-menu{display:none;position:relative}
 .site-menu summary{cursor:pointer;list-style:none;padding:10px 15px;border:1px solid var(--line);border-radius:99px;color:var(--navy);font-weight:800}
 .site-menu summary::-webkit-details-marker{display:none}
@@ -36,8 +35,8 @@ body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF 
 .store-visible-link{width:100%;margin-top:22px;padding:14px;border:1px solid #ffffff25;border-radius:14px;background:#001328;color:#d8e6ef;font-size:.82rem;line-height:1.5;overflow-wrap:anywhere;user-select:all}
 .store-status{display:inline-block;margin-top:12px;padding:7px 11px;border-radius:99px;background:#6fe3d91a;color:var(--mint);font-size:.78rem;font-weight:800}
 .site-footer{max-width:none;margin:0;background:var(--ink);color:#9eb0bf;text-align:center;padding:30px 24px;font-size:.84rem}
-@media(max-width:920px){.site-links{display:none}.site-menu{display:block}}
-@media(max-width:620px){.site-nav-inner{height:64px;padding:0 18px}.page-hero{padding:48px 20px 20px}.legal-content{padding:6px 18px 30px}.legal-content>section,.legal-content>.content-card,.legal-card{padding:22px;border-radius:19px}.store-grid{grid-template-columns:1fr;padding:6px 18px 60px}.store-card{padding:22px}}
+@media(max-width:920px){.site-links{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin}.site-links a{white-space:nowrap}.site-menu{display:none}}
+@media(max-width:620px){.site-nav-inner{min-height:46px;padding:6px 16px}.site-links{padding:6px 16px 8px}.page-hero{padding:48px 20px 20px}.legal-content{padding:6px 18px 30px}.legal-content>section,.legal-content>.content-card,.legal-card{padding:22px;border-radius:19px}.store-grid{grid-template-columns:1fr;padding:6px 18px 60px}.store-card{padding:22px}}
 /* Portada y campaña 2026 */
 .hero-inner{grid-template-columns:minmax(0,1fr) minmax(360px,.82fr);gap:64px;padding-top:64px}
 .hero-copy{max-width:650px}
